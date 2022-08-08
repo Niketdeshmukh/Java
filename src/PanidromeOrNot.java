@@ -5,6 +5,7 @@ public class PanidromeOrNot {
         System.out.println("Enter the number : ");
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
+        int temp = num;
         String str = "";
         while (num>0){
            int digit=num%10;
@@ -13,7 +14,7 @@ public class PanidromeOrNot {
         }
         System.out.println(str);
         int var=Integer.parseInt(str);
-        if (var== num){
+        if (var== temp){
             System.out.println("The number is palindrome :)");
         }
         else System.out.println("Not a palindrome");
