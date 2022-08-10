@@ -9,6 +9,9 @@ public class InvertedTrianglePatternStar {
             for (int j = 1; j <=i ;j++) {
                 System.out.print(" ");
             }
+            for (int j = num-1; j>=i ; j--) {
+                System.out.print("* ");
+            }
             System.out.println();
         }
     }
