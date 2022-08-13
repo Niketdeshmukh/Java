@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class GreatestElementAndItsIndex {
+public class SmallestElementAndItsIndex {
     public static void main(String[] args) {
 
         System.out.println("Enter the no of elements : ");
@@ -11,11 +11,11 @@ public class GreatestElementAndItsIndex {
         for (int i = 0; i < num; i++) {
             array[i]= sc.nextInt();
         }
-        int max = 0;
+        int min = 0;
         for (int i = 0; i <num; i++) {
-          if(array[i]>array[max])
-            max=i;
+            if(array[i]<array[min])
+                min=i;
         }
-        System.out.println(array[max]+" ,"+max);
+        System.out.println(array[min]+" ,"+min);
     }
 }
