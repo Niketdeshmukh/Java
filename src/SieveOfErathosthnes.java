@@ -1,19 +1,12 @@
 public class SieveOfErathosthnes {
     public static void sieveOfEratosthenes(int n)
     {
-       //initially all are true
         boolean prime[] = new boolean[n + 1];
         for (int i = 0; i <= n; i++)
             prime[i] = true;
 
-        for (int p = 2; p * p <= n; p++) {
-            // If prime[p] is not changed, then it is a
-            // prime
+        for (int p = 2; p <= n; p++) {
             if (prime[p] == true) {
-                // Update all multiples of p greater than or
-                // equal to the square of it numbers which
-                // are multiple of p and are less than p^2
-                // are already been marked.
                 for (int i = p * p; i <= n; i += p)
                     prime[i] = false;
             }
@@ -32,4 +25,6 @@ public class SieveOfErathosthnes {
         sieveOfEratosthenes(n);
     }
 }
+//p*p isly likha h kyuki square k bad ke hi number milenge examplle 2 ke multiples 2 ke square mtlb 4 ke badse hi milenge phir 3
+//ke multiples 9 k badse hi milenge kyuki 6 to already 2 ne cover krlia h
 
