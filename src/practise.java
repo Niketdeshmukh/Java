@@ -1,16 +1,21 @@
+import java.util.Collection;
 import java.util.Scanner;
 
 public class practise {
+
     public static void main(String[] args) {
-       int n=100;
-       for(int i=1;i<=Math.sqrt(n);i++)
-       {
-           if(n%i==0)
-           {
-               System.out.println(i);
-               if(n/i!=i)
-               System.out.println(n/i);
-           }
-       }
+        int nums[]={1,0,1,1,0,1,1,1,0};
+     int count=0,max=0;
+     for(int i=0;i<nums.length;i++)
+     {
+         if(nums[i]==1)
+         {  count++;
+             max=Math.max(max,count);
+         }
+         else {
+             count=0;
+         }
+     }
+        System.out.println(max);
     }
 }
