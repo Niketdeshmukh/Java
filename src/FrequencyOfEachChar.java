@@ -6,13 +6,14 @@ public class FrequencyOfEachChar {
         char string[]=str.toCharArray();
         for (i = 0; i < string.length; i++) {
             freq[i]=1;
-            for ( j = 0; j < string.length; j++) {
+            for ( j = i+1; j < string.length; j++) {
                 if(string[i]==string[j]){
                     freq[i]++;
-                    string[i]='0';
+                    string[j]='0';
                 }
             }
-        }System.out.println("Hi Welcome Here");
+        }
+        System.out.println("Hi Welcome Here");
         for(i = 0; i <freq.length; i++) {
             if(string[i] != ' ' && string[i] != '0')
                 System.out.println(string[i] + "-" + freq[i]);
