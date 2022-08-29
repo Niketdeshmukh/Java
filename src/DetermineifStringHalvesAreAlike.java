@@ -1,22 +1,19 @@
 public class DetermineifStringHalvesAreAlike {
+    public static boolean halvesString(String s){
+        int count = 0;
+        for(int i=0;i<s.length() / 2;i++) {
+            char c = s.charAt(i);
+            if (c == 'A' || c == 'a' || c == 'e' || c == 'E' || c =='i' || c == 'I' || c == 'o' || c == 'O' || c == 'u' || c == 'U') count++;
+        }
+        for(int i=s.length() / 2;i<s.length();i++) {
+            char c = s.charAt(i);
+            if (c == 'A' || c == 'a' || c == 'e' || c == 'E' || c =='i' || c == 'I' || c == 'o' || c == 'O' || c == 'u' || c == 'U') count--;
+        }
+        return count == 0;
+    }
     public static void main(String[] args) {
-        String str = "Biernok";
-        char[] ch = str.toCharArray();
-        int n = str.length();
-        int count = 0, count1 = 0;
-        for (int i = 0; i < n / 2; i++) {
-            if (ch[i] == 'a' || ch[i] == 'A' || ch[i] == 'e' || ch[i] == 'E' || ch[i] == 'i' || ch[i] == 'I' || ch[i] == 'o' || ch[i] == 'O' || ch[i] == 'u' || ch[i] == 'U') {
-                count++;
-            }
-
-        }
-        for (int i = n / 2; i < n; i++) {
-            if (ch[i] == 'a' || ch[i] == 'A' || ch[i] == 'e' || ch[i] == 'E' || ch[i] == 'i' || ch[i] == 'I' || ch[i] == 'o' || ch[i] == 'O' || ch[i] == 'u' || ch[i] == 'U') {
-                count1++;
-            }
-        }
-        if (count == count1) {
-            System.out.println(true);
-        } else System.out.println(false);
+        String s = "boek";
+        boolean result = halvesString(s);
+        System.out.println(result);
     }
 }
