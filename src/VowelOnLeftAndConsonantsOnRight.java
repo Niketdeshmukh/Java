@@ -1,9 +1,9 @@
-import java.util.*;
-public class VowelsOnLeftAndConsonantsOnRight
-{
+import java.util.Scanner;
+
+public class VowelOnLeftAndConsonantsOnRight {
     String wrd,newwrd;
     static Scanner x=new Scanner(System.in);
-    VowelsOnLeftAndConsonantsOnRight(){}
+    VowelOnLeftAndConsonantsOnRight(){}
     void readword()
     {
         System.out.println("Enter a word" );
@@ -41,9 +41,8 @@ public class VowelsOnLeftAndConsonantsOnRight
         System.out.println("Original word = "+ wrd);
         System.out.println("Rearranged word = "+ newwrd);
     }
-    static void main()
-    {
-        VowelsOnLeftAndConsonantsOnRight obj=new VowelsOnLeftAndConsonantsOnRight();
+    public static void main(String[] args) {
+        VowelOnLeftAndConsonantsOnRight obj=new VowelOnLeftAndConsonantsOnRight();
         obj.readword();
         obj.freq_vow_con();
         obj.arrange();
