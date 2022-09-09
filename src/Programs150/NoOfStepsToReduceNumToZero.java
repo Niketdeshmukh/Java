@@ -13,7 +13,8 @@ public class NoOfStepsToReduceNumToZero {
             else if(num%2!=0){
                 count++;
                 num=num-1;
-            }}
+            }
+        }
 
         System.out.println( count);
     }
