@@ -1,9 +1,3 @@
 # Java
 100 days of java
-.
-.
-.nn
-.
-.
-.
-
+Problem solving
