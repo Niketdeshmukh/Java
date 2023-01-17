@@ -6,3 +6,4 @@ Java Concepts
 Recursion
 Tree - Binary Tree
 Subtree of the tree
+GCD of the tree returing it's node
