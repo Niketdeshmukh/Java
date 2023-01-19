@@ -12,3 +12,4 @@ Kadane's Algorithm
 Stack
 Queue
 Graph
+Connecting notes to the direction of binry tree
