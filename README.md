@@ -9,3 +9,4 @@ Subtree of the tree
 GCD of the tree returing it's node
 LinkedList
 Kadane's Algorithm
+Stack
