@@ -6,7 +6,7 @@ Java Concepts <br/>
 Recursion <br/>
 Tree - Binary Tree <br/>
 Subtree of the tree <br/>
-GCD of the tree returing it's node <br/>;;
+GCD of the tree returing it's node <br/>
 LinkedList <br/>
 Kadane's Algorithm <br/>
 Stack <br/>
