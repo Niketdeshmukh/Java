@@ -13,4 +13,4 @@ Stack <br/>
 Queue <br/>
 Graph <br/>
 Connecting notes to the direction of binry tree
-Left,right,
+Left,right,top
