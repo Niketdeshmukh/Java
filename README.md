@@ -1,5 +1,5 @@
 # Java
-# Data structures and algorithms for interviews
+# Data structures and algorithms
 
 This repository contains JAVA implementations of general algorithms and data structures.
 
